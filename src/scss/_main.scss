@@ -1,0 +1,17 @@
+.main {
+  padding-top: 256px;
+}
+
+#carousel-main {
+  .slide-controller {
+    --size: 12px;
+    border: 1px solid $primary--color;
+    opacity: 1;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    &.active {
+      background-color: $primary--color;
+    }
+  }
+}
