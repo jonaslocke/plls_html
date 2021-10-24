@@ -1,0 +1,61 @@
+.section {
+  color: $primary--color;
+  &-paragraph {
+    display: block;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: 15px;
+    line-height: 2rem;
+    &__align-left {
+      text-align: left;
+      margin: 0;
+      width: auto;
+    }
+  }
+  &-link {
+    border: 1px solid $primary--color;
+    padding: 1rem 2rem;
+    margin: auto;
+    color: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 11px;
+  }
+  &:first-of-type {
+    padding-top: 9rem;
+  }
+  & + .section {
+    padding-top: 9rem;
+  }
+}
+.view-our-work {
+  display: flex;
+  flex-direction: column;
+  .section-paragraph {
+    & + .section-link {
+      margin-top: 4rem;
+    }
+  }
+}
+.work-together {
+  display: flex;
+  img {
+    width: 50%;
+  }
+  &__legend {
+    position: relative;
+    padding-left: 3rem;
+    display: flex;
+    align-items: center;
+    .section-link {
+      position: absolute;
+      bottom: 5px;
+    }
+  }
+}
+
+.section-title {
+  text-align: center;
+  line-height: 28px;
+}

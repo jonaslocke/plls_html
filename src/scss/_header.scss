@@ -1,46 +1,54 @@
 .navigation {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  padding-left: 74.5px;
-  padding-right: 74.5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: white;
+  z-index: 2;
+  transition: 0.3s ease-in-out;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   &__logo {
+    img {
+      height: 74px;
+    }
   }
   &__links {
     margin: 0;
     list-style: none;
     display: flex;
-    font-size: 1.2rem;
-    a {
-      padding: 0 1.5rem;
-      text-decoration: none;
-      color: $primary--color;
-      span {
-        position: relative;
-        &::after {
-          transition: 0.2s ease-in-out;
-          content: "";
-          display: block;
-          position: absolute;
-          background-color: transparent;
-          width: 120%;
-          height: 2px;
-          bottom: -0.7rem;
-          left: 50%;
-          transform: translateX(-50%);
+    li {
+      a {
+        text-decoration: none;
+        color: $primary--color;
+        span {
+          position: relative;
+          &::after {
+            transition: 0.2s ease-in-out;
+            content: "";
+            display: block;
+            position: absolute;
+            background-color: transparent;
+            width: 120%;
+            height: 2px;
+            bottom: -0.7rem;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+        &:hover {
+          span::after {
+            background-color: $primary--color;
+          }
         }
       }
-      &:hover {
-        span::after {
-          background-color: $primary--color;
-        }
+      & + li {
+        padding-left: 3rem;
       }
     }
   }

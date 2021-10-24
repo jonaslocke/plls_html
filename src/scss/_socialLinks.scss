@@ -1,0 +1,35 @@
+.section.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-links {
+  padding: 0;
+  padding-top: 1.5rem;
+  display: flex;
+  list-style: none;
+  --size: 38px;
+  &__link {
+    a {
+      width: var(--size);
+      height: var(--size);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $primary--color;
+      color: white;
+      font-size: 1.5rem;
+      border-radius: 0.75rem;
+      text-decoration: none;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        color: white;
+        transform: scale(1.1);
+      }
+    }
+    & + .social-links__link {
+      margin-left: 0.75rem;
+    }
+  }
+}

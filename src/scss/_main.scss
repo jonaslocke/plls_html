@@ -3,15 +3,21 @@
 }
 
 #carousel-main {
-  .slide-controller {
-    --size: 12px;
-    border: 1px solid $primary--color;
-    opacity: 1;
-    width: var(--size);
-    height: var(--size);
-    border-radius: 50%;
-    &.active {
-      background-color: $primary--color;
+  --size: 12px;
+
+  // padding-bottom: calc(-1 * (var(--size) + 30px));
+  padding-bottom: calc(var(--size) + 30px);
+  .carousel-indicators {
+    margin-bottom: 0;
+    .slide-controller {
+      border: 1px solid $primary--color;
+      opacity: 1;
+      width: var(--size);
+      height: var(--size);
+      border-radius: 50%;
+      &.active {
+        background-color: $primary--color;
+      }
     }
   }
 }

@@ -1,0 +1,32 @@
+.tns-nav {
+  --size: 12px;
+  display: flex;
+  justify-content: center;
+  button {
+    border: 1px solid #9a9a9a;
+    opacity: 1;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  &-active {
+    background-color: $primary--color;
+  }
+}
+
+.carousel-favorites {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+  .card-carousel {
+    padding: 0 18px;
+
+    img {
+      display: block;
+      margin: auto;
+      max-height: 400px;
+      max-width: 225px;
+    }
+  }
+}
