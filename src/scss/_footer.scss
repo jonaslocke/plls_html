@@ -1,0 +1,22 @@
+.footer {
+  padding-top: 20px;
+  padding-bottom: 8px;
+  height: 308px;
+  background-color: #cacaca;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  .navigation__links {
+    li {
+      a {
+        color: white;
+      }
+    }
+  }
+  .copyright {
+    background-color: #c5c5c5;
+    padding: 10px;
+  }
+}
