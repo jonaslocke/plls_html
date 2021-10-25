@@ -1,6 +1,6 @@
 .footer {
+  margin-top: 9rem;
   padding-top: 20px;
-  padding-bottom: 8px;
   height: 308px;
   background-color: #cacaca;
   display: flex;
@@ -18,5 +18,7 @@
   .copyright {
     background-color: #c5c5c5;
     padding: 10px;
+    width: 100%;
+    text-align: center;
   }
 }
