@@ -10,10 +10,21 @@ $primary--color: #9a9a9a;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  & > .container {
+    flex: 1;
+  }
+}
 
 @import "header";
+
 @import "main";
 @import "tnsCarousel";
 @import "section";
 @import "socialLinks";
+@import "portifolio";
+
 @import "footer";

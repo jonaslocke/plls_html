@@ -72,7 +72,25 @@
     </header>
     <div class="container">
       <main class="main">
-        <!-- [INSERT HERE] -->
+        <h3 class="section-title">Portifolio</h3>
+        <div class="portifolio-grid"></div>
+        <section class="section portfolio-work-together">
+          <p class="section-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
+            pariatur dolore repellat beatae voluptatum, nam dolor ullam voluptas
+            unde officia molestiae, odit reiciendis totam fugit nostrum
+            repellendus voluptates quisquam hic.
+          </p>
+          <a href="#" class="section-link">work together</a>
+        </section>
+        <section class="section links">
+          <ul class="social-links">
+            <li class="social-links__link"><a href="#"><i class="fab fa-pinterest-p"></i></a></i></li>
+            <li class="social-links__link"><a href="#"><i class="fab fa-instagram"></i></a></i></li>
+            <li class="social-links__link"><a href="#"><i class="fab fa-linkedin-in"></i></a></i></li>
+            <li class="social-links__link"><a href="#"><i class="far fa-envelope"></i></a></i></li>
+          </ul>
+        </section>
       </main>
     </div>
     <footer class="footer">
@@ -103,5 +121,21 @@
       </div>
       <div class="copyright">Copyright 2019 Priscilla Syade.</div>
     </footer>
+
+    <script>
+      const grid = document.querySelector(".portifolio-grid");
+
+      const card = (image) => {
+        return `
+                <div class="portifolio-grid__card" >
+                  <a href="#" data-name="grid-card${image}"><img src="./imgs/port${image}.jpg" alt="" ></a>
+                </div>
+        `;
+      };
+
+      for (let i = 0; i < 9; i++) {
+        grid.innerHTML += card((i % 6) + 1);
+      }
+    </script>
   </body>
 </html>
