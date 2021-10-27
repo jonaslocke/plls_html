@@ -21,7 +21,17 @@ const carouselSlider = ({ active = false, target, id }) => {
 };
 
 carouselItems.forEach((slide, id) =>
-caroselIndicators.append(
+  caroselIndicators.append(
     carouselSlider({ active: id == 0, target: "carousel-main", id })
   )
 );
+
+const slider = tns({
+  container: ".carousel-favorites",
+  items: 3,
+  slideBy: "page",
+  autoplay: false,
+  controls: false,
+  autoplayButtonOutput: false,
+  navPosition: "bottom",
+});

@@ -23,7 +23,14 @@
     font-size: 11px;
     &:hover {
       color: $primary--color;
-      background-color: #E5E5E5;
+      background-color: #e5e5e5;
+    }
+    &__submit {
+      background-color: #c0c0c0;
+      color: white;
+      border-color: transparent;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
     }
   }
   &-title {

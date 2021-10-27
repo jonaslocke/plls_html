@@ -71,16 +71,28 @@
     <div class="container">
       <main class="main">
         <section class="section section__about">
-          <img src="./imgs//about.png" alt="" />
+          <img src="./imgs/port5.jpg" alt="" />
           <div class="section__about--textbox">
-            <h3 class="section-title">About</h3>
-            <p class="section-paragraph section-paragraph__align-left">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-              cupiditate est dolor eius ad reprehenderit sunt neque nemo
-              asperiores, quaerat ipsum dolore velit, omnis libero aliquid
-              accusamus minima laborum quia.
-            </p>
-            <a href="#" class="section-link">work together</a>
+            <h3 class="section-title">Contact</h3>
+            <form id="contact-us" class="w-100">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="contact-us__name" placeholder="name@example.com">
+                <label for="contact-us__name">Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="contact-us__email" placeholder="name@example.com">
+                <label for="contact-us__email">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="contact-us__subject" placeholder="name@example.com">
+                <label for="contact-us__subject">Subject</label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Leave a comment here" id="contact-us__message" style="height: 6rem;"></textarea>
+                <label for="contact-us__message">Message</label>
+              </div>
+              <input type="submit" value="submit" class="section-link section-link__submit float-end">              
+            </form>
           </div>
         </section>
         <section class="section links">
