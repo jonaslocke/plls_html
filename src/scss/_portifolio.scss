@@ -10,8 +10,7 @@
     position: relative;
     a {
       color: white;
-      transition: 0.3s ease-in-out;
-      transform-origin: center;
+      overflow: hidden;
 
       img {
         display: block;
@@ -20,7 +19,22 @@
         max-height: 225px;
         position: relative;
       }
+      &::before {
+        --offset: 24px;
+        content: "";
+        position: absolute;
+        display: block;
+        width: calc(100% - var(--offset));
+        height: calc(100% - var(--offset));
+        border: 2px solid white;
+        z-index: 1;
+        top: calc(var(--offset) / 2);
+        left: calc(var(--offset) / 2);
+        opacity: 0;
+        transition: 0.5s ease-out;
+      }
       &::after {
+        content: attr(data-name);
         display: block;
         position: absolute;
         display: flex;
@@ -32,14 +46,18 @@
         line-height: 100%;
         top: 0;
         left: 0;
+        color: white;
         font-size: 1.5rem;
-        transition: 0.3s ease-in-out;
+        transform: scale(0);
+        transition: 0.2s ease-in-out;
         transform-origin: center;
       }
       &:hover {
-        color: white;
         &::after {
-          content: attr(data-name);
+          transform: scale(1);
+        }
+        &::before {
+          opacity: 1;
         }
       }
     }
