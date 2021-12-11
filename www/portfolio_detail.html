@@ -38,9 +38,8 @@
       referrerpolicy="no-referrer"
     />
     <script src="./js/navbar.js" defer></script>
-    <script src="./js/form.js" defer></script>
-  </head>  
-<body>
+  </head>
+  <body>
     <header class="navigation">
       <div class="container">
         <div class="navigation__logo">
@@ -74,38 +73,94 @@
     </header>
     <div class="container">
       <main class="main">
-        <section class="section section__about">
-          <img src="./imgs/port5.jpg" alt="" />
-          <div class="section__about--textbox">
-            <h3 class="section-title">Contact</h3>
-            <form id="contact-us" class="w-100">
-              <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="contact-us__name" placeholder="name@example.com">
-                <label for="contact-us__name">Name</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="contact-us__email" placeholder="name@example.com">
-                <label for="contact-us__email">Email address</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="contact-us__subject" placeholder="name@example.com">
-                <label for="contact-us__subject">Subject</label>
-              </div>
-              <div class="form-floating mb-3">
-                <textarea class="form-control" placeholder="Leave a comment here" id="contact-us__message" style="height: 6rem;"></textarea>
-                <label for="contact-us__message">Message</label>
-              </div>
-              <input type="submit" value="submit" class="section-link section-link__submit float-end">              
-            </form>
-          </div>
+        <h3 class="section-title">Project 1</h3>
+        <section class="section portfolio-detail">
+          <img
+            class="portfolio-detail__image"
+            src="./imgs/detail/pd01.jpg"
+            alt=""
+          />
+          <img
+            class="portfolio-detail__image"
+            src="./imgs/detail/pd02.jpg"
+            alt=""
+          />
+          <img
+            class="portfolio-detail__image"
+            src="./imgs/detail/pd03.jpg"
+            alt=""
+          />
+          <img
+            class="portfolio-detail__image"
+            src="./imgs/detail/pd04.jpg"
+            alt=""
+          />
+          <img
+            class="portfolio-detail__image"
+            src="./imgs/detail/pd05.jpeg"
+            alt=""
+          />
+          <img
+            class="portfolio-detail__image"
+            src="./imgs/detail/pd06.jpg"
+            alt=""
+          />
+          <img
+            class="portfolio-detail__image"
+            src="./imgs/detail/pd07.jpeg"
+            alt=""
+          />
+          <img
+            class="portfolio-detail__image"
+            src="./imgs/detail/pd08.jpeg"
+            alt=""
+          />
         </section>
-        <section class="section links">
-          <ul class="social-links">
-            <li class="social-links__link"><a href="https://www.pinterest.com/priscillasyade/" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
-            <li class="social-links__link"><a href="https://www.instagram.com/priscilla_syade/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            <li class="social-links__link"><a href="https://www.linkedin.com/in/priscilla-syade-46784253/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-            <li class="social-links__link"><a href="mailto:prisyade@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></li>
-          </ul>
+        <section class="section dont-miss">
+          <h3 class="section-title section-title--white">Contact</h3>
+          <form id="contact-us" class="w-100 pt-4">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="contact-us__name"
+                placeholder="name@example.com"
+              />
+              <label for="contact-us__name">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="contact-us__email"
+                placeholder="name@example.com"
+              />
+              <label for="contact-us__email">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="contact-us__subject"
+                placeholder="name@example.com"
+              />
+              <label for="contact-us__subject">Subject</label>
+            </div>
+            <div class="form-floating mb-3">
+              <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="contact-us__message"
+                style="height: 6rem"
+              ></textarea>
+              <label for="contact-us__message">Message</label>
+            </div>
+            <input
+              type="submit"
+              value="submit"
+              class="section-link section-link__submit float-end"
+            />
+          </form>
         </section>
       </main>
     </div>

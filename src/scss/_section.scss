@@ -37,6 +37,9 @@
     text-align: center;
     line-height: 28px;
     font-weight: 400;
+    &--white {
+      color: white;
+    }
   }
   & + .section {
     padding-top: 9rem;
