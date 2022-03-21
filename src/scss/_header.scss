@@ -41,7 +41,8 @@
             transform: translateX(-50%);
           }
         }
-        &:hover {
+        &:hover,
+        &.active {
           span::after {
             background-color: $primary--color;
           }
